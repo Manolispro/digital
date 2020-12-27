@@ -112,7 +112,7 @@ body{
     height:50px;
     left:calc(50% - 56px);
     z-index:3;
-    bottom: 150px;
+    bottom: 57px;
     transition:all 170ms ease-out;
 }
 .downarrow .icon{
@@ -453,7 +453,56 @@ footer .footer-content .links ul a{
 }
 /* ##Device = Low Resolution Tablets, Mobiles (Landscape) ##Screen = B/w 481px to 767px */
 @media (min-width: 481px) and (max-width: 767px) {
-   /* CSS */
+    .about p {
+        font-size: 1rem;
+        text-align: justify;
+        width: 100%;
+       padding:30px;
+        font-weight: 600;
+        line-height: 2.3rem;
+    }
+    .gallery{
+        width:90%;
+        display:grid;
+        grid-template-columns: repeat(2,1fr);
+        gap:15px;
+        padding: 10px;
+        line-height: 0;
+    }
+    .jobscontainer {
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+        align-content: center;
+        height: 70%;
+        flex: 1;
+        justify-content: center;
+        height: 100%;
+        text-align: left;
+        padding:0px;
+   }
+   .jobscontentleft, .jobscontentright {
+    text-align: justify;
+    width: 100%;
+}
+.jobscontentright {
+    margin-left: 0px;
+}
+.footer-section .social a {
+    margin-top: 10px;
+}
+.footer-content {
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+.footer .footer-content .footer-section {
+    padding: 5px 15px;
+}
+
+
+    
 }
 /* ##Device = Most of the Smartphones Mobiles (Portrait) ##Screen = B/w 320px to 479px */
 @media (min-width: 250px) and (max-width: 480px) {
@@ -495,10 +544,6 @@ footer .footer-content .links ul a{
         height: 131px;
         margin: 0 16px;
     }
-    
-    
-    
-    
     .jobscontainer {
         display: flex;
         flex-direction: column;
