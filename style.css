@@ -457,11 +457,7 @@ footer .footer-content .links ul a{
 }
 /* ##Device = Most of the Smartphones Mobiles (Portrait) ##Screen = B/w 320px to 479px */
 @media (min-width: 250px) and (max-width: 480px) {
-    .header-content h1 {
-        font-size: 3.4rem;
-        letter-spacing: .2em;
-        line-height: 4rem;
-    }
+   
     .about h1, .portfolio h1, .jobs h1, .contact h1 {
         letter-spacing: .2rem;
     }
@@ -473,10 +469,11 @@ footer .footer-content .links ul a{
         
     }
     .header-content h1 {
-        font-size: 3rem;
-        letter-spacing: .1rem;
+        font-size: 3.4rem;
+        letter-spacing: .2em;
         line-height: 4rem;
     }
+  
     .header-content p {
         font-size: 1rem;
         letter-spacing: .3rem;
