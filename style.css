@@ -488,18 +488,35 @@ footer .footer-content .links ul a{
 .jobscontentright {
     margin-left: 0px;
 }
-.footer-section .social a {
-    margin-top: 10px;
-}
-.footer-content {
-    display: block;
+.containercont{
     width: 100%;
-    margin: 0 auto;
+    display:block;
+}
+.contactform{
+    width:100%;
+}
+.contact{
+    padding: 0px 0px;
+    display: block;
     text-align: center;
 }
-.footer .footer-content .footer-section {
-    padding: 5px 15px;
+.containercont .contactinfo .box {
+    display: block;
 }
+.containercont .contactinfo {
+    width: 100%;
+}
+footer .footer-content .footer-section {
+    padding: 20px 6px;
+}
+.footer-content {
+    width: 100%;
+}
+.footer-bottom {
+    padding-top: 20px;
+}
+
+
 
 
     
