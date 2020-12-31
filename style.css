@@ -122,7 +122,7 @@ body{
     font-size: 4rem;
     position: absolute;
     left: calc(50% - 24px);
-    bottom: 0px;
+    bottom: 40px;
 }
 .downarrow .icon:hover{
     transform: translatey(.8vh);
@@ -407,7 +407,8 @@ footer .footer-content .footer-section{
     font-size: 1.3rem;
     border-radius: 5px;
     display: inline-block;
-    margin-top:30px;
+    margin:30px 0;
+
     transition:all .3s ease-in;
 }
 .footer-section .social a:hover{
@@ -437,22 +438,42 @@ footer .footer-content .links ul a{
 }
 /* ##Device = Desktops ##Screen = 1281px to higher resolution desktops */
 @media (min-width: 1281px) {
-   /* CSS */
+   .gallery {
+    width: 100%;
+    grid-template-columns: repeat(4, 1fr);
+}
 }
 /* ##Device = Laptops, Desktops ##Screen = B/w 1025px to 1280px */
 @media (min-width: 1025px) and (max-width: 1280px) {
-   /* CSS */
+    .gallery {
+        width: 100%;
+        grid-template-columns: repeat(3, 1fr);
+    }
 }
 /* ##Device = Tablets, Ipads (portrait) ##Screen = B/w 768px to 1024px */
-@media (min-width: 768px) and (max-width: 1024px) {
-   /* CSS */
+@media (min-width: 767px) and (max-width: 1024px) {
+    .about p {
+        width: 90%;
+}
+.gallery {
+    width: 100%;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.jobscontainer {
+    padding: 20px 30px;
+}
+
+.contact {
+    padding: 50px 0px;
+}
 }
 /* ##Device = Tablets, Ipads (landscape) ##Screen = B/w 768px to 1024px */
-@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+@media (min-width: 767px) and (max-width: 1024px) and (orientation: landscape) {
    /* CSS */
 }
 /* ##Device = Low Resolution Tablets, Mobiles (Landscape) ##Screen = B/w 481px to 767px */
-@media (min-width: 481px) and (max-width: 767px) {
+@media (min-width: 480px) and (max-width: 766px) {
     .about p {
         font-size: 1rem;
         text-align: justify;
@@ -500,11 +521,18 @@ footer .footer-content .links ul a{
     display: block;
     text-align: center;
 }
+.containercont {
+    margin: 20px 0;
+}
 .containercont .contactinfo .box {
     display: block;
+    padding:20px 40px;
 }
 .containercont .contactinfo {
     width: 100%;
+}
+.contactform {
+    padding: 40px 100px;
 }
 footer .footer-content .footer-section {
     padding: 20px 6px;
@@ -585,9 +613,14 @@ footer .footer-content .footer-section {
        /* height:8vh;
         */
    }
-    .footer-section .social a {
-        margin-top: 10px;
-   }
+ .footer-section .social{
+    padding-top: 10px;
+ }
+   .footer-section .social a {
+    margin: 0;
+    margin-top: 0px;
+   
+}
     .footer-content {
         display: block;
         width: 100%;
@@ -609,6 +642,9 @@ footer .footer-content .footer-section {
         display: block;
         text-align: center;
    }
+   .containercont {
+    margin: 10px 0;
+}
     .containercont .contactinfo .box {
         display: block;
    }
@@ -619,5 +655,7 @@ footer .footer-content .footer-section {
         width: 100%;
         gap: 8px;
         padding: 0px;
-   }
+        grid-template-columns: repeat(auto-fit, minmax(250px,340px));
+        place-content: center;
+    }
 }
