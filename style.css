@@ -468,6 +468,39 @@ footer .footer-content .links ul a{
     padding: 50px 0px;
 }
 }
+
+
+@media only screen  and (max-width: 820px) {
+    .nav-container {
+        display:flex;
+        justify-content: space-between;
+    }
+    
+    .nav-container ul {
+        display: none;
+    }
+    .nav-container img {
+        margin-left: 0px;
+    }
+    .hamburger{
+        font-size: 2rem;
+        padding:10px;
+    }
+}
+
+@media only screen  and (min-width: 820px) {
+    
+    
+    .nav-container ul {
+        display: flex;
+    }
+    .nav-container img {
+        margin-left: 0px;
+    }
+    .hamburger{
+      display:none
+    }
+}
 /* ##Device = Tablets, Ipads (landscape) ##Screen = B/w 768px to 1024px */
 @media (min-width: 767px) and (max-width: 1024px) and (orientation: landscape) {
    /* CSS */
@@ -555,9 +588,7 @@ footer .footer-content .footer-section {
     .about h1, .portfolio h1, .jobs h1, .contact h1 {
         letter-spacing: .2rem;
     }
-    .nav-container img {
-        margin: 0 auto;
-    }
+   
     .nav-container ul {
         display: none;
         
