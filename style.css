@@ -55,9 +55,10 @@ nav img{
 }
 .burger div{
     width: 23px;
-    height: 4px;
+    height: 3px;
     margin:5px;
     background:black;
+    transition: all 0.3s ease;
     
 
 }
@@ -518,6 +519,15 @@ footer .footer-content .links ul a{
     }
     .nav-active{
         transform:translate(0%);
+    }
+    .toggle .line1{
+        transform: rotate(-45deg) translate(-5px, 6px);
+    }
+    .toggle .line2{
+       opacity: 0;
+    }
+    .toggle .line3{
+        transform: rotate(45deg) translate(-5px, -6px);
     }
     
     
