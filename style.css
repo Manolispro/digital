@@ -49,6 +49,7 @@ nav img{
     display: flex;
     justify-content: space-around;
     width:50%;
+    opacity :0;
     overflow: hidden;
     
 }
@@ -529,6 +530,7 @@ footer .footer-content .links ul a{
     }
     .nav-active{
         transform:translate(0%);
+        opacity:1;
     }
     .toggle .line1{
         transform: rotate(-45deg) translate(-5px, 6px);
