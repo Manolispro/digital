@@ -90,7 +90,7 @@ nav img{
     padding-right: 1rem;
     text-align: center;
     margin: auto;
-    min-height:570px;
+    min-height: 445px;
     height: 90vh;
 }
 .fullscreen-vedeo-wrap{
@@ -707,7 +707,7 @@ footer .footer-content .footer-section {
         display: block;
         width: 100%;
         margin: 0 auto;
-        text-align: center;
+        text-align: left;
    }
     .footer .footer-content .footer-section {
         padding: 5px 15px;
