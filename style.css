@@ -521,7 +521,7 @@ footer .footer-content .links ul a{
         color: black;
         z-index: 5;
         transform: translate(100%);
-        transition: transform 0.5s ease-in;
+        /* transition: transform 0.5s ease-in; */
         width: 100%;
     }
         
@@ -536,6 +536,7 @@ footer .footer-content .links ul a{
         display:block;
     }
     .nav-active{
+        transition: transform 0.5s ease-in;
         transform:translate(0%);
         opacity:1;
     }
