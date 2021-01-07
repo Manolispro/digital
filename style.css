@@ -463,6 +463,12 @@ footer .footer-content .links ul a{
    /* height:8vh;
     */
 }
+.other{
+    position: absolute;
+    bottom:0px;
+    right:0px;
+    left:0px;
+}
 
 
 /*phantom index style temporary*/
@@ -499,7 +505,8 @@ top:80px;
 display :grid;
 grid-template-columns: repeat(auto-fit,minmax(350px,1fr));
 min-height: 100vh;
-grid-gap:1rem;    
+grid-gap:1rem;  
+  
 }
 
 .img-container{
@@ -526,6 +533,7 @@ transform:scale(1.1);
     height:100%;
     opacity: 0;
     pointer-events: none;
+    transition: 0.25s ease-out;
 
 }
 .modal.open{
@@ -836,5 +844,6 @@ footer .footer-content .footer-section {
         padding: 0px;
         grid-template-columns: repeat(auto-fit, minmax(250px,340px));
         place-content: center;
+        
     }
 }
