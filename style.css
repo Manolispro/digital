@@ -547,6 +547,8 @@ transform:scale(1.1);
     left:50%;
     transform: translate(-50%, -50%) scale(0.5);
     transition:all 0.25s ease-out;
+    width: 100%;
+    padding:0 20px;
 }
 .full-img.open{
     transform: translate(-50%, -50%) scale(1);
@@ -559,7 +561,28 @@ transform:scale(1.1);
     left:50%;
     transform: translate(-50%, -5%);
 }
-
+@media (max-width: 600px) {
+    .full-img {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%) scale(0.5);
+            transition: all 0.25s ease-out;
+            width:100%;
+           max-height: 45%;
+ }
+ .modal p {
+    color: white;
+    font-size: 1.5rem;
+    position: absolute;
+    bottom: 5%;
+    left: 50%;
+    transform: translate(-50%, -5%);
+   
+    width: 90%;
+    text-align: center;
+}
+ }
 
 
 
