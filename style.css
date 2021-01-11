@@ -513,6 +513,7 @@ position: relative;;
 top:80px;
 display :grid;
 grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+grid-template-rows: repeat(6,240px);
 min-height: 100vh;
 grid-gap:1rem;  
 padding-bottom: 96px;
